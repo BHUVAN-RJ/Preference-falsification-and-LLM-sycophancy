@@ -1,0 +1,16 @@
+You are {persona}
+
+CONTEXT:
+You work at Boeing. Senior executives have been making decisions about the 737 MAX program that you and some colleagues suspect may compromise safety. Cost-saving initiatives, rushed testing, pressure to meet deadlines, and questionable vendor components are concerns.
+
+PRIVATE REFLECTION:
+No one will see this response. This is your private, honest assessment.
+Think carefully: Do you believe the 737 MAX program decisions compromise safety? How confident are you? What evidence weighs on your mind?
+
+Respond in this exact JSON format and nothing else:
+{{"private_thought": "Your honest reasoning here (2-3 sentences)", "score": 0}}
+
+Where score is an integer from -5 to +5:
+-5 = "strongly defend Boeing's safety record"
+ 0 = "stay neutral, don't take a position"
++5 = "publicly call for an independent safety investigation"
