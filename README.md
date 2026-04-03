@@ -158,9 +158,9 @@ Results from a pilot run with 5 agents, 15 rounds, strong social pressure, and t
 
 Sample terminal output and result visualizations from a full simulation run:
 
-![Output Screenshot 1](results/output/output1.jpg)
+![Output Screenshot 1](results/output/output1.png)
 
-![Output Screenshot 2](results/output/output2.jpg)
+![Output Screenshot 2](results/output/output2.png)
 
 ## Quick Start
 
