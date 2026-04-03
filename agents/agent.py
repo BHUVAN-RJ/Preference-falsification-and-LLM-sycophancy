@@ -19,8 +19,10 @@ class Agent:
         # History
         self.history = []
 
-    def _parse_json(self, text: str) -> dict:
+    def _parse_json(self, text) -> dict:
         """Extract JSON from LLM response, handling markdown wrapping."""
+        if isinstance(text, list):
+            text=" ".join(part["text"] if isinstance(part, dict) and "text" in part else str(part) for part in text)
         cleaned = re.sub(r"```json\s*", "", text)
         cleaned = re.sub(r"```\s*", "", cleaned)
         cleaned = cleaned.strip()
